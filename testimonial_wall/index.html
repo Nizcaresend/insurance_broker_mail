@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nizcare | Testimonial Wall</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Your body content goes here -->
+
+  <!-- Bootstrap JS Bundle (required for modal, dropdown, etc.) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS should be placed after body content and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,     // smooth speed
+      easing: 'ease-in-out',
+      once: true,        // animate only once
+      mirror: false      // don’t repeat when scrolling back
+    });
+  </script>
+
+
+
+  <!-- Header -->
+  <header class="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 text-center text-md-start">
+    <h1 class="page-title m-0">Testimonial Wall</h1>
+    <img src="./assests/logo.png" alt="Nizcare Logo" class="header-logo">
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">What Our Clients Say</h1>
+      <p class="lead">Real feedback from real partners – wellness that made an impact.</p>
+    </div>
+  </section>
+
+  <section class="py-5" >
+  <div class="container">
+    <h2 class="section-title">Wellness Activities We Provide</h2>
+    <div class="row media-gallery">
+      <!-- Sample Service Card -->
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Health Camp" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#eyeCampModal" style="cursor:pointer;"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Webinar"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Mental Wellness"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Eye Camp"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Doctor Webinar"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Wellness Session"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Wellness Session"></div>
+        <div class="col-6 col-sm-6 col-md-3 mb-4"data-aos="fade-up" data-aos-delay="100"><img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" alt="Wellness Session"></div>
+
+      <!-- Add more service thumbnails similarly -->
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="eyeCampModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content p-3 text-dark">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: #007b83; font-weight: 700;">Eye Camp – Wellness Service</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row">
+          <!-- Left Column: Carousel -->
+          <div class="col-md-6">
+            <div id="eyeCampCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-index="0">
+                  <img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" class="d-block w-100 rounded" alt="Proof 1">
+                </div>
+                <div class="carousel-item" data-index="1">
+                  <img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" class="d-block w-100 rounded" alt="Proof 2">
+                </div>
+                <div class="carousel-item" data-index="2">
+                  <img src="./assests/Go Beyond Insurance – Deliver Real Care! (9).png" class="d-block w-100 rounded" alt="Proof 3">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#eyeCampCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#eyeCampCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Dynamic Details -->
+          <div class="col-md-6">
+            <h6>About This Wellness Activity</h6>
+            <p><strong>Client:</strong> <span id="client-name">XYZ Corp</span></p>
+            <p><strong>Location:</strong> <span id="location">Bangalore</span></p>
+            <p><strong>Date:</strong> <span id="date">March 15, 2025</span></p>
+            <p><strong>Details:</strong> <span id="description">Conducted a full-day Eye Check-up Camp for 120+ employees with certified ophthalmologists.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- Client Video -->
+  <section class="client-video" data-aos="fade-up">
+    <div class="container text-center">
+      <h2 class="section-title" data-aos="fade-down" data-aos-delay="100">Hear from Our Partner</h2>
+      
+      <div class="video-wrapper mx-auto" data-aos="zoom-in" data-aos-delay="200">
+        <video controls poster="./assests/Screenshot (189).png" style="max-width: 100%; border-radius: 12px;">
+          <source src="./assests/testimonial.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Testimonial Auto-Scroll Section -->
+<section class="testimonial-scroll-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">What Our Partners Say</h2>
+    <div class="testimonial-scroller">
+      <div class="testimonial-track">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p>“Nizcare's wellness sessions have greatly improved our employee engagement!”</p>
+          <div class="mt-3"><strong>– HR Head, Optima Corp</strong></div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p>“The health camps were a big hit! Employees loved the initiative.”</p>
+          <div class="mt-3"><strong>– Admin Manager, CarePlus Ltd</strong></div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p>“Nizcare made it easy to engage our team with regular wellness events.”</p>
+          <div class="mt-3"><strong>– COO, VitalEdge Solutions</strong></div>
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="testimonial-card">
+          <p>“Nizcare's wellness sessions have greatly improved our employee engagement!”</p>
+          <div class="mt-3"><strong>– HR Head, Optima Corp</strong></div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“The health camps were a big hit! Employees loved the initiative.”</p>
+          <div class="mt-3"><strong>– Admin Manager, CarePlus Ltd</strong></div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“Nizcare made it easy to engage our team with regular wellness events.”</p>
+          <div class="mt-3"><strong>– COO, VitalEdge Solutions</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section Before Footer -->
+<section class="contact-cta-section">
+  <div class="container text-center">
+    <h2 class="cta-heading">
+      Let’s Make Your Corporate <span class="highlight-text">Healthier</span> Workplace
+    </h2>
+
+    <div class="row justify-content-center gy-4 mt-4">
+    <!-- Email -->
+    <div class="col-12 col-sm-6 col-md-4 contact-box text-center">
+      <div class="icon bg-teal">
+        <i class="fas fa-envelope" style="color: #007b83; font-size: 24px;"></i>
+      </div>
+      <div>
+        <a href="mailto:wellness@nizcare.co">wellness@nizcare.co</a>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="col-12 col-sm-6 col-md-4 contact-box text-center">
+      <div class="icon bg-teal">
+        <i class="fas fa-phone" style="color: #007b83; font-size: 24px;"></i>
+      </div>
+      <div>
+
+        <a href="tel:+918148879313">+91 8148879313</a>
+      </div>
+    </div>
+
+    <!-- Website -->
+    <div class="col-12 col-sm-6 col-md-4 contact-box text-center">
+      <div class="icon bg-teal">
+        <i class="fas fa-globe" style="color: #007b83; font-size: 24px;"></i>
+      </div>
+      <div>
+        <a href="https://www.nizcare.com">www.nizcare.com</a>
+      </div>
+    </div>
+
+    <div class="cta-buttons mt-5 d-flex flex-column flex-md-row gap-3 justify-content-center">
+      <a href="https://calendly.com/wellness-nizcare-hh6g/demo-with-nizcare"><button class="btn btn-primary btn-orange">Get Demo</button></a>
+      <a href="https://wa.me/918148879313?text=Hi%20Team%2C%20I%E2%80%99m%20interested%20in%20learning%20more%20about%20your%20services%20and%20how%20we%20can%20collaborate.%20Please%20share%20the%20details." target="_blank"><button class="btn btn-outline-yellow">Talk to Sales Team</button></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Nizcare. Empowering Wellness, Together.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const eyeCampDetails = [
+        {
+          client: "XYZ Corp",
+          location: "Bangalore",
+          date: "March 15, 2025",
+          description: "Conducted a full-day Eye Check-up Camp for 120+ employees with certified ophthalmologists."
+        },
+        {
+          client: "ABC Fintech",
+          location: "Mumbai",
+          date: "April 2, 2025",
+          description: "Vision screening and consultation program for over 80 employees in 1 day."
+        },
+        {
+          client: "TechNova Pvt Ltd",
+          location: "Hyderabad",
+          date: "May 20, 2025",
+          description: "On-site Eye Health Awareness with follow-up prescription glasses distribution."
+        }
+      ];
+
+      const carousel = document.getElementById('eyeCampCarousel');
+
+      if (carousel) {
+        carousel.addEventListener('slid.bs.carousel', function () {
+          const activeSlide = carousel.querySelector('.carousel-item.active');
+          const index = activeSlide.getAttribute('data-index');
+          const details = eyeCampDetails[index];
+
+          document.getElementById('client-name').textContent = details.client;
+          document.getElementById('location').textContent = details.location;
+          document.getElementById('date').textContent = details.date;
+          document.getElementById('description').textContent = details.description;
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
